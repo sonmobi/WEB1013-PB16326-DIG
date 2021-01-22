@@ -6,15 +6,24 @@ body{
     margin: 0px auto;
     background-color: #fff;
 }
-header{ height: 100px; background-color: yellowgreen;}
-nav{ height: 30px; background-color: blue; color: yellow;}
+header{ height: 100px;  
+ background: url("https://hedieuhanh.com/wp-content/uploads/2019/05/hinh-nen-dep-cute_115833741.jpg");
+}
+header img{
+    margin-top: 20px; margin-left: 20px;
+}
+nav{ height: 30px; background-color: blue; color: yellow; padding-top: 10px; padding-left: 10px;}
+nav a{ color: yellow;}
+
 article{ 
     min-height: 300px; background-color:yellow;
-    width: 800px; float: left;
+    width: 800px; float: left; padding: 10px; 
+    box-sizing: border-box;
 }
 aside{ 
     min-height: 300px; background-color: cyan;
-    width: 200px; float: left;
+    width: 200px; float: left; padding: 10px; 
+    box-sizing: border-box;
 }
 footer{ 
     min-height: 100px; background-color: darkgrey;
