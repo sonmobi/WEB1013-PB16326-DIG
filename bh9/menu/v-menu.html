@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #v-menu{ width: 200px; background: yellow;}
+        #v-menu ul{   padding: 0px;  list-style: none; }
+        #v-menu ul li a{
+            display: block; text-decoration: none; padding: 5px;
+            border: 1px solid red; background-color: yellowgreen;
+            
+            background-image: url("ic_arr.png");
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            background-position-y: 5px;
+            background-size: 15px;
+        }
+        #v-menu ul li a:hover{
+            background-color: yellow; color: red;
+            text-shadow: 5px 5px 5px green;
+        }
+    </style>
 </head>
 <body>
     <nav id="v-menu">
