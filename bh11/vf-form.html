@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #frm-dk{ width: 300px; margin: auto; border: 1px solid red;
+            padding: 20px; 
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        label{ display: block; font-weight: bold; margin-top: 10px;}
+        #frm-dk h2{ margin: 0px; padding: 0px; text-align: center;}
+        label.txt{ font-weight: normal; margin: 0px;}
+        .x{ width: 95%;}
+
+    </style>
 </head>
 <body>
-    <h2>Đăng ký</h2>
-    <form action="">
-        <label>Username</label>
-        <input type="text" name="username">
-        <label>Password</label>
-        <input type="password" name="pass" >
+    <div id="frm-dk">
+        <h2>Đăng ký</h2>
+        <form action="">
+            <label>Username</label>
+            <input class="x" type="text" name="username">
+            <label>Password</label>
+            <input class="x" type="password" name="pass" >
 
-        <label>Gender</label>
-        <label>    <input type="radio" value="0">Male     </label>
-        <label>    <input type="radio" value="1">Female   </label>
+            <label>Gender</label>
+            <label class="txt">    <input type="radio" name="g" value="0">Male     </label>
+            <label class="txt">    <input type="radio" name="g" value="1">Female   </label>
 
-        <label>Option</label>
-        <label>    <input type="checkbox" value="1">Option 1  </label>
-        <label>    <input type="checkbox" value="2">Option 2  </label>
-        <label>Note</label>
-        <textarea name="note" cols="30" rows="10"></textarea>
-        <label>Course</label>
-        <select name="c" >
-            <option value="1">HTML</option>
-            <option value="2">CSS</option>
-            <option value="3">JavaScript</option>
-        </select>
-        <button type="submit">Submit form</button>
-    </form> 
+            <label>Option</label>
+            <label class="txt">    <input type="checkbox" value="1">Option 1  </label>
+            <label class="txt">    <input type="checkbox" value="2">Option 2  </label>
+            <label>Note</label>
+            <textarea  class="x" name="note" cols="30" rows="5"></textarea>
+            <label>Course</label>
+            <select name="c" >
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JavaScript</option>
+            </select>
+            <button type="submit">Submit form</button>
+        </form> 
+    </div>
 </body>
 </html>
