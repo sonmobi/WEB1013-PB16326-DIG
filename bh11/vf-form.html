@@ -14,17 +14,17 @@
         #frm-dk h2{ margin: 0px; padding: 0px; text-align: center;}
         label.txt{ font-weight: normal; margin: 0px;}
         .x{ width: 95%;}
-
+        .btn-group{ text-align: center; padding: 10px;}
     </style>
 </head>
 <body>
     <div id="frm-dk">
         <h2>Đăng ký</h2>
-        <form action="">
+        <form action="https://google.com" method="get">
             <label>Username</label>
-            <input class="x" type="text" name="username">
+            <input  readonly class="x" type="text" name="username" placeholder="Nhập tiếng Việt không dấu">
             <label>Password</label>
-            <input class="x" type="password" name="pass" >
+            <input disabled class="x" type="password" name="pass" >
 
             <label>Gender</label>
             <label class="txt">    <input type="radio" name="g" value="0">Male     </label>
@@ -41,7 +41,14 @@
                 <option value="2">CSS</option>
                 <option value="3">JavaScript</option>
             </select>
-            <button type="submit">Submit form</button>
+
+            <label>Email</label>
+            <input required type="email" placeholder="Nhập email">
+            <input type="number" placeholder="Nhập số">
+            <div class="btn-group">
+                <button type="submit">Submit form</button>
+            </div>
+            
         </form> 
     </div>
 </body>
